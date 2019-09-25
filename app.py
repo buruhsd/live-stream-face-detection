@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     """Video streaming home page."""
-    return render_template('index.html')
+    return render_template('html/dashboard/index.html')
 
 
 def gen_frame():
@@ -27,7 +27,7 @@ def video_feed():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', threaded=True)
+    app.run(host='127.0.0.1', threaded=True)
 
 
 
